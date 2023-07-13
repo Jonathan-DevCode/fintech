@@ -1,0 +1,341 @@
+:root {
+  --blue-color: #31b2dd;
+  --yellow-color: #f1db30;
+  --yellow-color-hover: #cab82a;
+}
+
+.body-login {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.text-yellow-custom {
+  color: var(--yellow-color);
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+.img-febraban {
+  height: 110px;
+}
+
+.logo-febraban {
+  max-width: 250px;
+}
+
+.card-yellow {
+  background-color: var(--yellow-color);
+  color: #111;
+  padding: 25px 35px;
+  font-size: 32px;
+  width: max-content;
+  font-weight: bold;
+}
+
+.col-febraban-img {
+  padding-top: 30vh;
+  padding-right: 0px;
+}
+
+.form-mobile {
+  display: none;
+}
+
+.form-desktop {
+  text-align: center;
+  padding-top: 20vh;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.form-desktop form {
+  background: rgb(49, 178, 221);
+  border: none;
+  padding: 25px;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.input-field {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border: 3px solid transparent;
+}
+
+.input-field i {
+  color: black;
+}
+
+.input-field input {
+  background-color: white !important;
+  border: none;
+}
+
+.input-field input:focus,
+.input-field input:target,
+.input-field input:visited {
+  background-color: white !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.btn-login,
+.btn-login-loading {
+  background-color: var(--yellow-color);
+  color: #111;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.btn-login:hover,
+.btn-login-loading:hover {
+  background-color: var(--yellow-color-hover);
+}
+
+.error-field {
+  border: 3px solid red;
+}
+
+.error-message {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 799px) {
+  .col-febraban-img {
+    padding-top: 5vh;
+    padding-right: 20px;
+  }
+
+  .form-desktop {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .form-desktop form {
+    margin: 0px;
+    padding-bottom: 163px;
+  }
+}
+
+/* painel */
+.nav-link {
+  /* color: black !important; */
+  font-weight: bold;
+  padding-top: 14px;
+}
+
+.btn-iniciar-avaliacao {
+  background-color: var(--yellow-color);
+  color: #111;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.btn-iniciar-avaliacao:hover {
+  background-color: #e0cb32;
+}
+
+.btn-avaliado {
+  background-color: rgb(55, 165, 58);
+  color: white;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.btn-avaliado:hover {
+  background-color: rgb(44, 132, 47);
+  color: white;
+}
+
+.card-fintech {
+  background-color: var(--blue-color);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: 20px 0px;
+  -webkit-box-shadow: 5px 2px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 2px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-fintech .fintech-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin-right: auto;
+}
+
+.card-fintech .fintech-info .fintech-title {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.card-fintech .fintech-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-fintech .fintech-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #3ce;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-fintech .fintech-icon-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card-fintech .fintech-icon-section i {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 799px) {
+  .card-fintech {
+    flex-direction: column;
+  }
+
+  .fintech-icon-section {
+    display: none !important;
+  }
+
+  .fintech-action {
+    margin-top: 20px;
+  }
+}
+
+
+.btn-prev-fintech {
+  background-color: #ddd;
+  color: #111;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  float: left;
+}
+
+.btn-prev-fintech:hover {
+  background-color: rgb(193, 193, 193)
+}
+
+.btn-next-fintech {
+  background-color: rgb(23, 203, 56);
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  float: right;
+}
+
+.btn-next-fintech:hover {
+  background-color: rgb(21, 173, 49);
+  color: #fff;
+}
+
+.card-avaliacao {
+    margin: 50px 0px;
+    padding: 20px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 2px 20px 5px rgb(0 0 0 / 20%);
+    box-shadow: 5px 2px 20px 5px rgb(0 0 0 / 20%);
+}
+
+.card-avaliacao .criterio-info h5, .card-avaliacao .criterio-nota h5 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-avaliacao .criterio-info h6 {
+  font-size: 21px;
+}
+
+.criterio-nota {
+  margin-top: 30px;
+}
+.btn-radius {
+  border-radius: 25px;
+}
+
+.btn-nota {
+  background-color: #ddd;
+}
+
+.btn-nota:hover, .btn-nota.selected {
+  background-color: #3ce;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #3ce;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: rgb(41, 180, 211);
+  color: white;
+}
+
+.btn-white {
+  background-color: rgb(239, 239, 239);
+  color: #3ce;
+}
+
+.btn-white:hover {
+  background-color: rgb(225, 225, 225);
+  color: #3ce;
+}
+
+@media screen and (max-width: 799px) {
+  .btn-prev-fintech, .btn-next-fintech {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

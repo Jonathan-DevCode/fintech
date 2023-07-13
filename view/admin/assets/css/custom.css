@@ -1,0 +1,66 @@
+.gradient-white {
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(200, 200, 200));
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.white-panel {
+    background-color: rgb(242, 242, 242);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90vw;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 799px) {
+    .main-card {
+        margin-top: 50px;
+    }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 800px) {
+    .white-panel {
+        width: 50vw;
+    }
+    .form-input {
+        max-width: 70% !important;
+    }
+    .main-card {
+        margin-top: 60px;
+    }
+}
+
+.gray-text {
+    color: rgb(75, 75, 75) !important;
+}
+
+.white-text {
+    color: white;
+}
+
+.btn-red {
+    background-color: rgb(235, 67, 67) !important;
+    color: whitesmoke !important;
+}
+
+.btn-active {
+    border: 1px solid rgb(239, 239, 239) !important;
+    background-color: rgb(235, 67, 67) !important;
+    color: rgb(239, 239, 239) !important;
+}
+
+.btn-active:hover {
+    border: 1px solid rgb(239, 239, 239) !important;
+    background-color: rgb(235, 67, 67) !important;
+    color: rgb(239, 239, 239) !important;
+}
+
+.card-danger {
+    background-color: rgb(235, 67, 67) !important;color: white !important;
+}

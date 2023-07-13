@@ -1,0 +1,27 @@
+#Header always set Access-Control-Allow-Origin "*"
+#Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+#Header always set Access-Control-Max-Age "1000"
+#Header always set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
+
+#SSL descomente as linhas abaixo para forçar HTTPS no site
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#php_value memory_limit 128M
+
+#Options -MultiViews
+RewriteEngine on
+Options -Indexes
+
+RewriteRule ^media/ - [L,NC]
+RewriteRule ^view/ - [L,NC]
+RewriteRule ^assets/ - [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)/$ loader.php?rota=$1 [L,QSA]
+RewriteRule ^(.*)$ loader.php?rota=$1 [L,QSA]
+#RewriteRule ^(.*)$ loader.php?rota=index [L,QSA]
